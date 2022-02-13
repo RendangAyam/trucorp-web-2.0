@@ -1,0 +1,5 @@
+FROM mysql
+
+# melakukan copy sql file ke directory /docker-entrypoint-initdb.d/ 
+# untuk dapat dijalankan pada saat docker run
+COPY trucorp-db.sql /docker-entrypoint-initdb.d/
